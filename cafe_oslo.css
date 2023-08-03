@@ -1,0 +1,520 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* ------------Final de reset CSS--------*/
+/*----Comando general----*/
+*{
+    box-sizing: border-box;
+}
+
+
+
+h1{ font-family: 'Open Sans', sans-serif;
+	font-size: 44px;
+	font-weight: 800;
+	text-align: center;
+	
+
+	
+}
+h2{ 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+	text-align: center;
+	
+
+
+}
+h3, h4{ 
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24px;
+	font-weight: 800;
+	text-align: center;	
+}
+
+h5{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	
+}
+p, a {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.2;
+}
+
+
+/*--------header------*/
+
+header{
+	background-image: url("https://i.ibb.co/ssVVL45/fondo-Prin.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-position: center;
+		
+}
+
+div.nav{
+	overflow: hidden;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+	padding-top: 20px;
+	
+}
+div.logo{
+	float: left;
+	padding-left: 15px;
+	padding-top: 8px;
+	padding-bottom: 12px;
+
+
+}
+div.menu{
+	padding-right: 5px;
+	padding-top: 14px;
+	float: right;
+	
+}
+img.icon{
+	box-shadow:  -1px 5px 10px 1px rgba(222,214,192,0.35);
+	border-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: rgba(222,214,192,0.25);
+
+}
+div.titulo{
+    color: #f5f0ed;
+    margin-top: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 90px;
+}
+div.titulo h1{
+	margin-bottom: 40px;
+}
+div.titulo p{
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-left: 30px
+}
+/*---------main--------*/
+
+/*----intro----*/
+
+div.intro, .contac{
+    background-color: #D2393C;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+	min-height: 300px
+}
+div.intro_, .location{
+	background-color: #DED6C0;
+	padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+	min-height: 300px
+}
+ div.intro h3, div.intro_ h3, div.contac h3, div.location h3{
+	 padding-top: 50px;	
+}
+div.intro p, div.intro_ p, div.contac p, div.location p{
+	 padding-top: 50px;
+	 padding-right: 30px;
+     padding-left: 30px;
+}
+div.contac a, div.location a{
+	padding-top: 5px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+/*--------Corta historia---------*/
+
+
+div.presen{
+	background-image: url("Imágenes/Fondosec.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: auto;
+	background-position: center;
+	color: #f5f0ed;
+	position: relative;
+}
+div.presen h2{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding-top: 100px;
+    padding-right: 10px;
+    padding-left: 10px;
+   
+}
+div.guion{
+	padding-top: 10px;
+	position: absolute;
+	top: 35%;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+	
+	
+}
+div.presen p{
+	margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 0px;
+    padding-top: 90px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 130px; 	
+}
+div.presen span{
+	border: 2px solid #f5f0ed;
+	padding: 10px;
+	position: absolute;
+	top: 75%;
+	left: 20%;
+	right: 20%;
+	text-align: center;
+}
+
+/*---------Presentación de productos----*/
+
+
+
+div.pan, div.tarta, div.cake, div.trigo{
+	background-color: #f5f0ed;
+	padding-top: 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 50px;
+	max-height: 500px;
+	
+
+}
+div.pan h4, div.tarta h4, div.cake h4, div.trigo h4{
+	text-align: left;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.pan p, div.tarta p, div.cake p, div.trigo p{
+	text-align: left;
+	padding-top: 20px;
+	margin-left: 50px;
+    margin-right: 50px;
+}
+
+div.pan .iconpan, div.tarta .icontarta, div.cake .iconcake, div.trigo .icontrigo{
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+	max-width: 40%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+
+/*---------Menu Navegacion-----*/
+ul{
+	padding: 5px;
+	list-style: none;
+	
+}
+
+.navegacion{
+	margin-top: 15px;
+
+}
+a.selecmenu{
+	background-color: #ded6c0;
+	color: none;
+	font-size: 14px;
+	margin-left: 70%;
+	transition: 0.5s color;
+	transition: 0.5s font-size;
+	transition: 0.5s margin-left;
+	
+}
+a.selecmenu:hover{
+	font-size: 23px;
+	color: #d03b40;
+	margin-left: 50%;
+}
+a.selecmenu:visited{
+    color: rgba(82,177,156,1.00);
+	
+}
+.navegacion a{
+    display: block;
+	text-align: center;
+    text-decoration: none;
+    color: #2D211F;
+    border-bottom: 1px solid #2D211F;
+    box-shadow: inset 2px -1px 8px 1px #2D211F;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*------footer---*/
+
+footer{
+	background-color: #241d1b;
+	padding: 40px 0px;
+}
+footer p{
+	text-align: left;
+	color: #f5f0ed;
+	margin-left: 30px;
+}
+
+/*------ Media Query-----*/
+
+/*--Menu nav. vertical oculta pantalla movil--*/
+
+@media screen and (max-width: 839px){
+	.js .navegacion{
+		overflow: hidden;
+		max-height: 0;
+		transition: max-height 0.5s;
+		position: absolute;
+		top: 80px;
+		left: 18px;
+		right: 20px;
+		background-color: none;
+	}
+	
+	.js .navegacion a.selecmenu{
+		padding: 4px 5px;
+		border-top: 2px solid rgba(255, 255, 255, .4);
+	}
+	.js .navegacion.menu-desplegado{
+		max-height: 200px;	 
+	}
+	
+}
+
+/*-----Ajuste de pantalla---*/
+
+
+@media screen and (min-width: 740px) and (max-width: 1920px){
+	div.one, div.two, div.tree, div.four, div.texto{
+		overflow: hidden;
+	}
+	div.intro, .contac{
+		float: left;
+		width: 50%;
+		overflow: hidden;
+	}	
+	div.intro_, .location{
+		width: 50%;
+		float:right;
+		overflow: hidden;
+	}
+	
+	div.pan .iconpan, div.tarta .icontarta, div.cake .iconcake, div.trigo .icontrigo{
+		float: left;
+		max-width: 35%;
+		display: block;
+		padding-top: 0px;
+		padding-left: 60px;
+	}
+	div.pan, div.tarta, div.cake, div.trigo{
+		padding-top: 10%;
+		padding-bottom: 10%;
+		min-height: 300px;
+	}
+	div.pan h4, div.tarta h4, div.cake h4, div.trigo h4{
+		margin-left: 30px;
+		padding-top: 30px;
+		padding-left: 0px;
+		padding-right: 100px;
+	
+}
+	div.pan p, div.tarta p, div.cake p, div.trigo p{
+		margin-left: 30px;
+		padding-top: 20px;
+	   	padding-left: 0px;
+		padding-right: 30px;
+}
+	
+
+	div.presen p, div.titulo p{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+	div.presen span{
+	left: 30%;
+	right: 30%;
+}
+
+}
+
+
+
+@media screen and (min-width: 1200px) and (max-width: 1920px){
+	  div.pan, div.trigo{
+   		float: left;
+		width: 50%;
+		
+  }
+		
+	div.cake, div.tarta{
+    	float: left;
+		width: 50%;
+	
+  }
+	div.pan .iconpan, div.trigo .icontrigo, div.tarta .icontarta, div.cake .iconcake{
+		padding-left: 0px;
+		padding-right: 5;
+	}
+	div.pan h4, div.tarta h4, div.cake h4, div.trigo h4{
+		margin-right: 0px;
+		margin-left: 0px;
+		padding-right: 1%;
+		padding-top: 5px;
+		line-height: 35px
+	}
+	
+	div.pan p, div.tarta p, div.cake p, div.trigo p{
+		margin-right: 5px;
+		margin-left: 0px;
+		padding-top: 0px
+	}
+	div.titulo p{
+		padding-left: 320px;
+		padding-right: 320px
+	}
+	
+}
+/*---Menu de nav. horizontal pantalla grande--*/
+
+
+@media screen and (min-width: 840px){
+	
+	ul{
+		padding-right: 10px;
+	}
+	
+	.lanzador-menu{
+		display: none;
+	}
+	.navegacion{
+		position: absolute;
+		top: 30px;
+		right: 0px;
+	}
+	body{
+		margin-top: 0px;
+	}
+	.navegacion li{
+		display: inline-block;	
+		
+	}
+	a.selecmenu{
+	background-color: rgba(222,214,192,1);
+	text-align: center;
+	color: #241d1b;
+	border-top: 2px solid rgba(255, 255, 255, .4);
+	font-size: 15px;
+	margin-left: 2%;
+	transition: 0.5s color;
+	transition: 0.5s font-size;
+	transition: 0.5s margin-left;
+	
+}
+	a.selecmenu:hover{
+	font-size: 23px;
+	color: #d03b40;
+	margin-left: 0%;
+}
+	a.selecmenu:visited{
+    color: rgba(82,177,156,1.00);
+}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
