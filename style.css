@@ -13,6 +13,10 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+
+html {
+	scroll-behavior:smooth !important;  /*Para un scroll mas suave*/
+}
 ol, ul {
 	list-style: none;
 }
