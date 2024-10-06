@@ -5,27 +5,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -53,28 +32,25 @@ table {
 
 /* ------------Final de reset CSS--------*/
 /*----Comando general----*/
-*{
+*{ 
+	padding: 0;
+	margin: 0;
     box-sizing: border-box;
 }
 
 
 
-h1{ font-family: 'Open Sans', sans-serif;
+h1{ 
+	font-family: 'Open Sans', sans-serif;
 	font-size: 44px;
 	font-weight: 800;
 	text-align: center;
-	
-
-	
 }
 h2{ 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: 800;
 	text-align: center;
-	
-
-
 }
 h3, h4{ 
 	font-family: 'Open Sans', sans-serif;
@@ -312,7 +288,7 @@ a.selecmenu:hover{
 	margin-left: 50%;
 }
 a.selecmenu:visited{
-    color: rgba(82,177,156,1.00);
+    color: rgb(39, 39, 39);
 	
 }
 .navegacion a{
@@ -334,7 +310,7 @@ footer{
 	padding: 40px 0px;
 }
 footer p{
-	text-align: left;
+	text-align: center;
 	color: #f5f0ed;
 	margin-left: 30px;
 }
@@ -357,7 +333,7 @@ footer p{
 	
 	.js .navegacion a.selecmenu{
 		padding: 4px 5px;
-		border-top: 2px solid rgba(255, 255, 255, .4);
+		border-top: 2px solid rgb(0, 0, 0);
 	}
 	.js .navegacion.menu-desplegado{
 		max-height: 200px;	 
@@ -500,7 +476,7 @@ footer p{
 	margin-left: 0%;
 }
 	a.selecmenu:visited{
-    color: rgba(82,177,156,1.00);
+    color: rgb(0, 0, 0);
 }
 	
 }
