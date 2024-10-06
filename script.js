@@ -1,27 +1,26 @@
 /* Variables: cámbialas por los id y clase correspondiente */
 
 /* id del enlace que despliega el menú */
-var lanzador = "#enlace-menu";
-
+// var lanzador = "#enlace-menu";
+const lanzador = document.getElementById('enlace-menu')
 /* id del menú que será desplegado */
-var desplegable = "#menu";
+// var desplegable = "#menu";
+const desplegable = document.getElementById('menu')
 
 /* clase (sin el punto) que muestra el menú */
-var despliegaClase = "menu-desplegado";
+const despliegaClase = document.getElementById('menu-desplegado')
 	
 	
 /* A partir de aquí, puedes dejar el código tal cual */
 	
 /* declaramos las funciones */
 function nav(){
-	var lanz = document.querySelector(lanzador);	
-	lanz.addEventListener("click", despliegaMenu, false);
+	lanzador.addEventListener("click", despliegaMenu, false);
 }
 
 function despliegaMenu(e){
 	e.preventDefault();
-	var despl = document.querySelector(desplegable);
-	despl.classList.toggle(despliegaClase);
+	desplegable.classList.toggle(despliegaClase);
 }
 
 /* Agregamos la clase js a la etiqueta html para saber que JS está funcionando */
