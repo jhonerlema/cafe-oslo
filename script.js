@@ -2,13 +2,13 @@
 
 /* id del enlace que despliega el menú */
 // var lanzador = "#enlace-menu";
-const lanzador = document.getElementById('enlace-menu')
+const lanzador = document.getElementById('enlace-menu');
 /* id del menú que será desplegado */
 // var desplegable = "#menu";
-const desplegable = document.getElementById('menu')
+const desplegable = document.getElementById('menu');
 
 /* clase (sin el punto) que muestra el menú */
-const despliegaClase = document.getElementById('menu-desplegado')
+const despliegaClase = 'menu-desplegado';
 	
 	
 /* A partir de aquí, puedes dejar el código tal cual */
