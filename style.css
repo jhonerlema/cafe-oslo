@@ -57,25 +57,25 @@ table {
     box-sizing: border-box;
 }
 
+html {
+	scroll-behavior:smooth !important;  /*Para un scroll mas suave*/
+}
 
 
-h1{ font-family: 'Open Sans', sans-serif;
+h1{
+	font-family: 'Open Sans', sans-serif;
 	font-size: 44px;
 	font-weight: 800;
-	text-align: center;
-	
-
-	
+	text-align: center;	
 }
+
 h2{ 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 28px;
 	font-weight: 800;
 	text-align: center;
-	
-
-
 }
+
 h3, h4{ 
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
@@ -88,8 +88,8 @@ h5{
 	font-size: 16px;
 	font-weight: 400;
 	text-align: center;
-	
 }
+
 p, a {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
@@ -134,11 +134,11 @@ div.menu{
 	
 }
 img.icon{
-	box-shadow:  -1px 5px 10px 1px rgba(222,214,192,0.35);
+	box-shadow: inset -1px 5px 10px 1px #555149a1;
 	border-radius: 15px;
 	padding-left: 15px;
 	padding-right: 15px;
-	background-color: rgba(222,214,192,0.25);
+	background-color: #d03b40a9;
 
 }
 div.titulo{
@@ -222,10 +222,9 @@ div.guion{
 	top: 35%;
 	left: 20%;
 	right: 20%;
-	text-align: center;
-	
-	
+	text-align: center;	
 }
+
 div.presen p{
 	margin-left: 50px;
     margin-right: 50px;
@@ -235,6 +234,7 @@ div.presen p{
     padding-left: 10px;
     padding-bottom: 130px; 	
 }
+
 div.presen span{
 	border: 2px solid #f5f0ed;
 	padding: 10px;
@@ -247,8 +247,6 @@ div.presen span{
 
 /*---------Presentación de productos----*/
 
-
-
 div.pan, div.tarta, div.cake, div.trigo{
 	background-color: #f5f0ed;
 	padding-top: 20px;
@@ -256,9 +254,8 @@ div.pan, div.tarta, div.cake, div.trigo{
     padding-left: 10px;
     padding-bottom: 50px;
 	max-height: 500px;
-	
-
 }
+
 div.pan h4, div.tarta h4, div.cake h4, div.trigo h4{
 	text-align: left;
 	margin-left: 50px;
@@ -283,7 +280,6 @@ div.pan .iconpan, div.tarta .icontarta, div.cake .iconcake, div.trigo .icontrigo
 	margin-right: auto;
 	display: block;
 }
-
 
 /*---------Menu Navegacion-----*/
 ul{
@@ -334,7 +330,7 @@ footer{
 	padding: 40px 0px;
 }
 footer p{
-	text-align: left;
+	text-align: center;
 	color: #f5f0ed;
 	margin-left: 30px;
 }
@@ -401,23 +397,23 @@ footer p{
 		padding-left: 0px;
 		padding-right: 100px;
 	
-}
-	div.pan p, div.tarta p, div.cake p, div.trigo p{
+	}
+		div.pan p, div.tarta p, div.cake p, div.trigo p{
 		margin-left: 30px;
 		padding-top: 20px;
-	   	padding-left: 0px;
+		padding-left: 0px;
 		padding-right: 30px;
-}
-	
+	}		
 
 	div.presen p, div.titulo p{
-    padding-left: 40px;
-    padding-right: 40px;
-}
+			padding-left: 40px;
+			padding-right: 40px;
+	}
+
 	div.presen span{
-	left: 30%;
-	right: 30%;
-}
+		left: 30%;
+		right: 30%;
+	}
 
 }
 
@@ -435,10 +431,12 @@ footer p{
 		width: 50%;
 	
   }
+
 	div.pan .iconpan, div.trigo .icontrigo, div.tarta .icontarta, div.cake .iconcake{
 		padding-left: 0px;
 		padding-right: 5;
 	}
+
 	div.pan h4, div.tarta h4, div.cake h4, div.trigo h4{
 		margin-right: 0px;
 		margin-left: 0px;
@@ -452,6 +450,7 @@ footer p{
 		margin-left: 0px;
 		padding-top: 0px
 	}
+
 	div.titulo p{
 		padding-left: 320px;
 		padding-right: 320px
@@ -470,18 +469,22 @@ footer p{
 	.lanzador-menu{
 		display: none;
 	}
+
 	.navegacion{
 		position: absolute;
 		top: 30px;
 		right: 0px;
 	}
+
 	body{
 		margin-top: 0px;
 	}
+
 	.navegacion li{
 		display: inline-block;	
 		
 	}
+
 	a.selecmenu{
 	background-color: rgba(222,214,192,1);
 	text-align: center;
@@ -492,16 +495,17 @@ footer p{
 	transition: 0.5s color;
 	transition: 0.5s font-size;
 	transition: 0.5s margin-left;
-	
-}
+	}
+
 	a.selecmenu:hover{
 	font-size: 23px;
 	color: #d03b40;
 	margin-left: 0%;
-}
+	}
+
 	a.selecmenu:visited{
     color: rgba(82,177,156,1.00);
-}
+	}
 	
 }
 
