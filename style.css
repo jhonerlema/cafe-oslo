@@ -122,10 +122,8 @@ div.nav{
 div.logo{
 	float: left;
 	padding-left: 15px;
-	padding-top: 8px;
-	padding-bottom: 12px;
-
-
+	padding-top: 15px;
+	margin-bottom: 20px;
 }
 div.menu{
 	padding-right: 5px;
@@ -134,11 +132,11 @@ div.menu{
 	
 }
 img.icon{
-	box-shadow: inset -1px 5px 10px 1px #555149a1;
-	border-radius: 15px;
-	padding-left: 15px;
-	padding-right: 15px;
-	background-color: #d03b40a9;
+	box-shadow: inset 5px 5px 15px 5px #36322c , 5px 5px 3px 0px #ded6c088;
+	border-radius: 12px;
+	border: solid .9px #43413a;
+	padding : 10px 0 10px 0;
+	background-color: #00000080;
 
 }
 div.titulo{
