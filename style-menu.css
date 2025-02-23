@@ -19,11 +19,12 @@
   justify-content: space-around;
   align-items: center;
   margin-right: 6px;
+  padding: 5px 0 5px 0;
   /*background-color: var(--fondoColor);
   border : 1px solid var(--secondSombra);*/
   border-radius: 8px;
-  height: 8vh;
-  width : 8vh; 
+  height: 6vh;
+  width : 6vh; 
   cursor: pointer;
   box-shadow: 
     2px 4px 8px var(--primarySombra), 
@@ -35,9 +36,8 @@
 
 /* Líneas del menú */
 .hamburg div {
-  
   width: 70%;
-  height: 1.1vh;
+  height: 0.8vh;
   background-color: var(--primaryColor);;
   border-radius: 5px;
 }
@@ -54,7 +54,7 @@
     transform: translateY(3vh) rotate(-360deg); /* Dos vueltas completas */
   }
   100% {
-    transform: translateY(2.6vh) rotate(45deg); /* Posición final */
+    transform: translateY(1.5vh) rotate(45deg); /* Posición final */
   }
 }
 
@@ -68,7 +68,7 @@
     transform: translateY(-3vh) rotate(-360deg); /*720deg 2 vueltas completas */
   }
   100% {
-    transform: translateY(-2.6vh) rotate(-45deg); /* Posición final */
+    transform: translateY(-1.5vh) rotate(-45deg); /* Posición final */
   }
 }
 
@@ -102,7 +102,7 @@
 @keyframes spinBack {
   0% {
     width: 80%;
-    transform: translateY(-6.6vh) rotate(-45deg);
+    transform: translateY(-3.6vh) rotate(-45deg);
   }
   50% {
     width: 20%;
@@ -115,7 +115,7 @@
 @keyframes spinBackOne {
   0% {
     width: 80%;
-    transform: translateY(6.6vh) rotate(-45deg);
+    transform: translateY(3.6vh) rotate(-45deg);
     
   }
   50% {
