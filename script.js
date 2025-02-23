@@ -30,3 +30,13 @@ document.querySelector("html").classList.add("js");
 
 /* ejecutamos la función principal */
 nav();
+
+
+// Seleccionar el contenedor del menú hamburguesa
+const hamburg = document.querySelector('.hamburg');
+
+// Agregar el evento de clic
+hamburg.addEventListener('click', () => {
+  // Alternar la clase activa para animar
+  hamburg.classList.toggle('active');
+});

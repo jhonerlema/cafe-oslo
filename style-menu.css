@@ -1,0 +1,150 @@
+/*.box {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #f9f9fb;
+  
+}*/
+:root{
+  --primaryColor: #ebfff8;
+  --secondColor: #ff4081;
+  --primarySombra: #b84343 ;
+  --secondSombra: #7a2224;
+  --fondoColor: #aba493;
+  --fonfoColorD: #4c1326;
+}
+.hamburg{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-right: 6px;
+  /*background-color: var(--fondoColor);
+  border : 1px solid var(--secondSombra);*/
+  border-radius: 8px;
+  height: 8vh;
+  width : 8vh; 
+  cursor: pointer;
+  box-shadow: 
+    2px 4px 8px var(--primarySombra), 
+    inset -0.1em -0.01em .6em var(--secondSombra),
+    inset 0.1em 0.01em .6em var(--secondSombra);
+
+}
+
+
+/* Líneas del menú */
+.hamburg div {
+  
+  width: 70%;
+  height: 1.1vh;
+  background-color: var(--primaryColor);;
+  border-radius: 5px;
+}
+ 
+/* Animación de rotación doble */
+
+@keyframes spinAndRotateOne {
+  0% {
+    width: 60%;
+    transform: translateY(0) rotate(0); /* Posición inicial */
+  }
+  50% {
+    width: 20%;
+    transform: translateY(3vh) rotate(-360deg); /* Dos vueltas completas */
+  }
+  100% {
+    transform: translateY(2.6vh) rotate(45deg); /* Posición final */
+  }
+}
+
+@keyframes spinAndRotate {
+  0% {
+    width: 60%;
+    transform: translateY(0) rotate(0); /* Posición inicial */
+  }
+  50% {
+    width: 20%;
+    transform: translateY(-3vh) rotate(-360deg); /*720deg 2 vueltas completas */
+  }
+  100% {
+    transform: translateY(-2.6vh) rotate(-45deg); /* Posición final */
+  }
+}
+
+/* Línea tres con animación */
+.hamburg.active .one {
+  width: 90%;
+  background-color: var(--secondColor);
+  animation: spinAndRotateOne 1s ease-in-out forwards; /* Duración de 1 segundo */
+}
+.hamburg.active .three {
+  width: 90%;
+  background-color: var(--secondColor);
+  animation: spinAndRotate 1s ease-in-out forwards; /* Duración de 1 segundo */
+}
+.hamburg.active .two {
+  opacity: 0;
+  animation: spinAndRotate 1s ease-in-out forwards;
+}
+.hamburg.active .one, .two, .three{
+  transition: all 1s ease; /* Efecto suave */
+}
+
+.hamburg.active {
+  background-color: var(--fonfoColorD); /* Cambiar color de fondo */
+  border-color: var(--secondColor); /* Cambiar color del borde */
+  transition: all 3s ease; /* Efecto suave */
+}
+
+
+/* Animación inversa para regresar */
+@keyframes spinBack {
+  0% {
+    width: 80%;
+    transform: translateY(-6.6vh) rotate(-45deg);
+  }
+  50% {
+    width: 20%;
+    transform: translateY(-1.5vh) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+@keyframes spinBackOne {
+  0% {
+    width: 80%;
+    transform: translateY(6.6vh) rotate(-45deg);
+    
+  }
+  50% {
+    width: 20%;
+    transform: translateY(1.5vh) rotate(360deg);
+  }
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+}
+
+.hamburg:not(.active) .three {
+  animation: spinBack 1s ease-in-out forwards;
+  transition: all 1.5s ease;
+}
+
+.hamburg:not(.active) .one {
+  animation: spinBackOne 1s ease-in-out forwards;
+  transition: all 1.5s ease;
+}
+
+.hamburg:not(.active) .two {
+  opacity: 1;
+  animation: spinBackOne 1s ease-in-out forwards;
+  transition: all 1.5s ease; /* Efecto suave */
+}
+
+.hamburg:not(.active) {
+  background-color: var(--fondoColor); /* Cambiar color de fondo */
+  border-color: var(--secondSombra); /* Cambiar color del borde */
+  transition: all 3s ease; /* Efecto suave */
+}
